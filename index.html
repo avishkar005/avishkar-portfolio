@@ -37,13 +37,9 @@
       padding:10px 0 22px 0;
       border-bottom:1px solid rgba(0,0,0,0.06);
     }
-    .brand {
-      font-family:"Poppins", sans-serif;
-      font-weight:700;
-      font-size:30px;
-      letter-spacing:0.6px;
-      color:#111;
-    }
+    /* brand removed per request - keep the header clean */
+    .brand { display:none; }
+
     nav.toplinks {
       display:flex;
       gap:20px;
@@ -156,6 +152,7 @@
 <body>
   <div class="site">
     <header class="top" role="banner">
+      <!-- brand intentionally hidden per your request -->
       <div class="brand">A.C.</div>
       <nav class="toplinks" role="navigation">
         <a href="#" class="about">About</a>
@@ -177,7 +174,7 @@
         </p>
 
         <p class="lead">
-          <strong>Tech stack:</strong> Python (pandas, numpy), SQL, Excel, data visualization (Matplotlib / Plotly), basic ML concepts.
+          <strong>Tech stack:</strong> Python (pandas, numpy), SQL, Excel, <strong>Tableau</strong>, <strong>Power BI</strong>, basics of <strong>R</strong>, data visualization (Matplotlib / Plotly), basic ML concepts.
         </p>
 
         <p class="lead">
@@ -218,3 +215,4 @@
   </div>
 </body>
 </html>
+
