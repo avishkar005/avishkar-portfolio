@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Avishkar Choundkar — About</title>
+
+  <!-- Fonts: heading + body to match the screenshot feel -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent: #00897b; /* screenshot green - change if needed */
+      --page-max: 1180px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      padding:0;
+      font-family:"Lora", serif;
+      color:#222;
+      background:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Header */
+    .site {
+      max-width:var(--page-max);
+      margin:0 auto;
+      padding:32px 40px;
+    }
+    header.top {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:10px 0 22px 0;
+      border-bottom:1px solid rgba(0,0,0,0.06);
+    }
+    .brand {
+      font-family:"Poppins", sans-serif;
+      font-weight:700;
+      font-size:30px;
+      letter-spacing:0.6px;
+      color:#111;
+    }
+    nav.toplinks {
+      display:flex;
+      gap:20px;
+      align-items:center;
+    }
+    nav.toplinks a {
+      text-decoration:none;
+      color:rgba(0,0,0,0.65);
+      font-family:"Poppins", sans-serif;
+      font-weight:500;
+      font-size:16px;
+    }
+    nav.toplinks a.blog {
+      color:var(--accent);
+      font-weight:600;
+    }
+
+    /* Main layout */
+    .main {
+      display:flex;
+      gap:48px;
+      align-items:flex-start;
+      padding:42px 0;
+    }
+
+    /* Left text column */
+    .col-text {
+      flex:1;
+      min-width:0;
+    }
+    h1.name {
+      margin:0 0 22px 0;
+      font-family:"Poppins", sans-serif;
+      font-size:56px;
+      line-height:1;
+      color:#1f1f1f;
+      font-weight:800;
+      letter-spacing:-1px;
+    }
+    p.lead {
+      font-size:20px;
+      line-height:1.9;
+      margin:0 0 18px 0;
+      color:#222;
+    }
+    a.accent {
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:700;
+    }
+    em { font-style:italic; color:var(--accent); font-weight:600; }
+
+    /* Right column */
+    .col-photo {
+      width:360px;
+      flex: 0 0 360px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+    .photo-wrap {
+      width:100%;
+      border-radius:6px;
+      overflow:hidden;
+      box-shadow: 0 10px 24px rgba(16,24,40,0.06);
+      border:6px solid #fff;
+      background:#f7f7f7;
+    }
+    .photo-wrap img {
+      width:100%;
+      height:auto;
+      display:block;
+    }
+
+    /* Social icons row (big icons like screenshot) */
+    .social-row {
+      display:flex;
+      gap:14px;
+      margin-top:22px;
+      justify-content:center;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .social-btn {
+      width:66px;
+      height:66px;
+      border-radius:12px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:#fff;
+      box-shadow:0 10px 18px rgba(16,24,40,0.06);
+      border:1px solid rgba(0,0,0,0.06);
+      text-decoration:none;
+    }
+    .social-btn svg { width:34px; height:34px; display:block; }
+
+    /* Responsive */
+    @media (max-width: 920px){
+      .main { flex-direction:column; gap:28px; }
+      .col-photo { width:240px; flex-basis:auto; align-self:center; }
+      h1.name { font-size:44px; text-align:center; }
+      .col-text { order:2 }
+      .col-photo { order:1 }
+      .site { padding:22px; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header class="top" role="banner">
+      <div class="brand">A.C.</div>
+      <nav class="toplinks" role="navigation">
+        <a href="#" class="about">About</a>
+        <a href="https://medium.com/@avishkarchoundkar16" class="blog" target="_blank" rel="noopener">Blog</a>
+      </nav>
+    </header>
+
+    <main class="main" role="main">
+      <!-- Left text -->
+      <section class="col-text">
+        <h1 class="name">Avishkar Choundkar</h1>
+
+        <p class="lead">
+          Hi! I'm Avishkar, currently working as a <strong>Research Intern at <a class="accent" href="https://mendygo.ai" target="_blank" rel="noopener">mendygo.ai</a></strong>. I focus on data-driven solutions and building tools as a <strong>Data Analyst</strong>.
+        </p>
+
+        <p class="lead">
+          I am in my <strong>third year of IT Engineering</strong> at <strong>Smt. Kashibai Navale College of Engineering, Vadgaon</strong>. I enjoy turning messy datasets into clear stories and visualizations that help people decide faster.
+        </p>
+
+        <p class="lead">
+          <strong>Tech stack:</strong> Python (pandas, numpy), SQL, Excel, data visualization (Matplotlib / Plotly), basic ML concepts.
+        </p>
+
+        <p class="lead">
+          Outside of work, I love <em>reading books</em>, <em>singing</em>, <em>writing poems</em>, and <em>swimming</em>. I also write on <a class="accent" href="https://medium.com/@avishkarchoundkar16" target="_blank" rel="noopener">Medium</a>.
+        </p>
+      </section>
+
+      <!-- Right column: photo + social icons -->
+      <aside class="col-photo" role="complementary">
+        <div class="photo-wrap">
+          <!-- Make sure the file name below exactly matches the file you uploaded to your GitHub repo -->
+          <img src="profile.jpg" alt="Avishkar Choundkar">
+        </div>
+
+        <div class="social-row" aria-hidden="false">
+          <!-- LinkedIn -->
+          <a class="social-btn" href="https://www.linkedin.com/in/avishkarchoundkar" target="_blank" rel="noopener" title="LinkedIn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#0A66C2" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zM8 8h4.8v2.2h.07c.67-1.27 2.3-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24H19v-8.5c0-2.03-.04-4.64-2.83-4.64-2.83 0-3.26 2.2-3.26 4.48V24H8V8z"/></svg>
+          </a>
+
+          <!-- X (Twitter) -->
+          <a class="social-btn" href="https://x.com/AvishkarChound1" target="_blank" rel="noopener" title="X / Twitter">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#0F1419" d="M23.95 4.57a9.9 9.9 0 0 1-2.83.78 4.9 4.9 0 0 0 2.15-2.7 9.84 9.84 0 0 1-3.12 1.2 4.92 4.92 0 0 0-8.38 4.48 13.97 13.97 0 0 1-10.16-5.15 4.92 4.92 0 0 0 1.52 6.57 4.9 4.9 0 0 1-2.23-.62v.06a4.92 4.92 0 0 0 3.95 4.82 4.93 4.93 0 0 1-2.22.08 4.93 4.93 0 0 0 4.6 3.42A9.87 9.87 0 0 1 0 19.54a13.93 13.93 0 0 0 7.55 2.21c9.05 0 14-7.5 14-14v-.64A9.98 9.98 0 0 0 24 4.59z"/></svg>
+          </a>
+
+          <!-- GitHub -->
+          <a class="social-btn" href="https://github.com/avishkar005" target="_blank" rel="noopener" title="GitHub">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#111" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.38-3.88-1.38-.53-1.36-1.3-1.72-1.3-1.72-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.72 1.26 3.39.96.11-.75.41-1.26.75-1.55-2.56-.29-5.26-1.28-5.26-5.72 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.45-2.71 5.42-5.29 5.71.42.36.8 1.07.8 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          </a>
+
+          <!-- Medium -->
+          <a class="social-btn" href="https://medium.com/@avishkarchoundkar16" target="_blank" rel="noopener" title="Medium">
+            <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path fill="#000" d="M26.6 64h34.7L119 177.6 111.5 64H147l58.6 145.8V64h30.7v160H147l-36.8-97.8L73.3 224H26.6z"/></svg>
+          </a>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
